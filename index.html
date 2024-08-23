@@ -5,11 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Athletix.is</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Athletix.is - Sports product distributor offering reliable and innovative sports gear.">
+    <meta name="keywords" content="sports gear, athletic equipment, sports products, distributor">
+    <meta property="og:title" content="Athletix.is">
+    <meta property="og:description" content="Offering reliable and innovative sports gear to businesses and athletes.">
+    <meta property="og:image" content="https://i.ibb.co/NnGPg1K/logo-JPEG.jpg">
+    <link rel="icon" href="https://i.ibb.co/NnGPg1K/logo-JPEG.jpg" type="image/jpg">
     <style>
+        :root {
+            --primary-color: #F4A261;
+            --secondary-color: #1D1D1D;
+            --light-gray: #F1FAEE;
+            --dark-gray: #333333;
+            --hover-color: #128C7E;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #1D1D1D; /* Dark Gray */
-            color: #F1FAEE; /* Light Gray */
+            background-color: var(--secondary-color); /* Dark Gray */
+            color: var(--light-gray); /* Light Gray */
             margin: 0;
             padding: 0;
             display: flex;
@@ -23,14 +41,14 @@
         header {
             text-align: center;
             margin-bottom: 20px;
-            background: linear-gradient(135deg, #1D1D1D 0%, #282828 100%);
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #282828 100%);
             padding: 40px;
             border-radius: 8px;
         }
         h1 {
             margin: 0;
             font-size: 2.5rem;
-            color: #F4A261; /* Orange */
+            color: var(--primary-color); /* Orange */
             font-family: 'Poppins', sans-serif;
         }
         .about, .contact {
@@ -46,33 +64,33 @@
             line-height: 1.6;
         }
         a {
-            color: #F4A261; /* Orange */
+            color: var(--primary-color); /* Orange */
             text-decoration: none;
         }
         a:hover {
-            color: #E5E5E5; /* Light Gray */
+            color: var(--light-gray); /* Light Gray */
         }
         .whatsapp-link {
             display: inline-block;
             margin-top: 20px;
             padding: 12px 24px;
-            background: linear-gradient(135deg, #25D366, #128C7E);
+            background: linear-gradient(135deg, #25D366, var(--hover-color));
             color: white;
             text-decoration: none;
             border-radius: 8px;
             font-size: 1.2rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
         }
         .whatsapp-link:hover {
-            background-color: #128C7E; /* Darker Green */
+            transform: scale(1.05);
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
         }
         .reviews {
             text-align: center;
             background-color: #282828; /* Darker Gray */
             padding: 40px;
-            color: #F1FAEE; /* Light Gray */
+            color: var(--light-gray); /* Light Gray */
             border-radius: 8px;
             box-sizing: border-box;
             margin-bottom: 40px;
@@ -80,7 +98,7 @@
         .reviews h2 {
             margin-bottom: 30px;
             font-size: 2rem;
-            color: #F4A261; /* Orange */
+            color: var(--primary-color); /* Orange */
             font-family: 'Poppins', sans-serif;
         }
         .review-container {
@@ -90,7 +108,7 @@
         }
         .review {
             width: 45%;
-            background-color: #333333; /* Dark Gray */
+            background-color: var(--dark-gray); /* Dark Gray */
             padding: 20px;
             margin: 10px;
             border-radius: 10px;
@@ -107,19 +125,18 @@
             line-height: 1.5;
         }
         .review strong {
-            color: #F4A261; /* Orange */
+            color: var(--primary-color); /* Orange */
         }
         footer {
             text-align: center;
             margin-top: 40px;
             padding: 20px;
             background-color: #282828;
-            color: #F1FAEE;
+            color: var(--light-gray); /* Light Gray */
             font-size: 0.9rem;
             border-radius: 8px;
         }
     </style>
-    <link rel="icon" href="https://i.ibb.co/NnGPg1K/logo-JPEG.jpg" type="image/jpg">
 </head>
 <body>
     <header>
@@ -136,7 +153,7 @@
         <p>Contact Us:</p>
         <p>Bogi: <a href="mailto:bogi@athletix.is">bogi@athletix.is</a></p>
         <p>Pétur: <a href="mailto:petur@athletix.is">petur@athletix.is</a></p>
-        <a href="https://wa.me/3548462551?text=Hello,%20I’m%20interested%20in%20your%20products" class="whatsapp-link">Chat with us on WhatsApp</a>
+        <a href="https://wa.me/3548462551?text=Hello,%20I’m%20interested%20in%20your%20products" class="whatsapp-link" aria-label="Chat with us on WhatsApp" onclick="gtag('event', 'click', {'event_category': 'Contact', 'event_label': 'WhatsApp'});">Chat with us on WhatsApp</a>
     </section>
 
     <section class="reviews">
@@ -164,5 +181,15 @@
     <footer>
         © 2024 Athletix.is
     </footer>
+
+    <!-- Google Analytics Code -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFF0GZ2R0D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HFF0GZ2R0D');
+    </script>
 </body>
 </html>
