@@ -4,17 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Athletix.is</title>
-    <!-- Google Analytics -->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFF0GZ2R0D"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-HFF0GZ2R0D');
-    </script>
-    <!-- End Google Analytics -->
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -67,6 +56,38 @@
         .whatsapp-link:hover {
             background-color: #128C7E;
         }
+        .reviews {
+            text-align: center;
+            background-color: #282828;
+            padding: 40px;
+            color: #F1FAEE;
+        }
+        .reviews h2 {
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #F4A261;
+        }
+        .review-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .review {
+            width: 45%;
+            background-color: #333;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: left;
+            box-sizing: border-box;
+        }
+        .review p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .review strong {
+            color: #F4A261;
+        }
     </style>
 </head>
 <body>
@@ -85,6 +106,28 @@
         <p>Bogi: <a href="mailto:bogi@athletix.is" style="color: #F4A261;">bogi@athletix.is</a></p>
         <p>Pétur: <a href="mailto:petur@athletix.is" style="color: #F4A261;">petur@athletix.is</a></p>
         <a href="https://wa.me/3548462551?text=Hello,%20I’m%20interested%20in%20your%20products" class="whatsapp-link">Chat with us on WhatsApp</a>
+    </section>
+
+    <section class="reviews">
+        <h2>Read Reviews on Some of Our Products</h2>
+        <div class="review-container">
+            <div class="review">
+                <p>"The StraightAway has been a very beneficial addition to my practice routine. The takeaway is a key ingredient to a consistent backswing and it provides me with a visual cue that gets me set into a perfect position every time."</p>
+                <p><strong>Stuart Macdonald</strong> - PGA Tour Professional Golfer, Korn Ferry Tour</p>
+            </div>
+            <div class="review">
+                <p>"I love the StraightAway. It provides a very simple, non-technical swing thought as a placeholder so you don't focus on the negatives - like hitting it in the water or missing the cut. I give it to some of the teaching pros I work with to recommend to their students."</p>
+                <p><strong>Dr. Michael Lardon</strong> - PGA Tour Mental Coach & Author of Mastering Golf's Mental Game</p>
+            </div>
+            <div class="review">
+                <p>"I really think you are on to something big with this StraightAway, David. I've been using it and fine-tuning ways to get the message across...the results are amazing."</p>
+                <p><strong>Kevyn Cunningham</strong> - PGA, Director of Golf, Half Moon Resort Jamaica</p>
+            </div>
+            <div class="review">
+                <p>"The first move in the swing, the correct takeaway, is crucial for consistent golf and fixing your faults. It's the major reason for poor golf that I see when playing in pro-ams. The StraightAway will immediately show you how to make the perfect takeaway. It's the start to great golf."</p>
+                <p><strong>Nick Price</strong> - Former World #1 & 3-Time Major Champion</p>
+            </div>
+        </div>
     </section>
     
     <footer>
