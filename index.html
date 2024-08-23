@@ -58,6 +58,7 @@
             margin: 0 auto;
             padding: 20px;
         }
+
         header {
             text-align: center;
             margin-bottom: 20px;
@@ -65,12 +66,14 @@
             padding: 40px;
             border-radius: 8px;
         }
+
         h1 {
             margin: 0;
             font-size: 2.5rem;
             color: var(--primary-color); /* Orange */
             font-family: 'Poppins', sans-serif;
         }
+
         .about, .contact {
             max-width: 600px;
             text-align: center;
@@ -79,17 +82,21 @@
             border-radius: 8px;
             background-color: #282828;
         }
+
         p {
             font-size: 1.2rem;
             line-height: 1.6;
         }
+
         a {
             color: var(--primary-color); /* Orange */
             text-decoration: none;
         }
+
         a:hover {
             color: var(--light-gray); /* Light Gray */
         }
+
         .whatsapp-link {
             display: inline-block;
             margin-top: 20px;
@@ -102,10 +109,12 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
         }
+
         .whatsapp-link:hover {
             transform: scale(1.05);
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
         }
+
         .reviews {
             text-align: center;
             background-color: #282828; /* Darker Gray */
@@ -115,17 +124,20 @@
             box-sizing: border-box;
             margin-bottom: 40px;
         }
+
         .reviews h2 {
             margin-bottom: 30px;
             font-size: 2rem;
             color: var(--primary-color); /* Orange */
             font-family: 'Poppins', sans-serif;
         }
+
         .review-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
+
         .review {
             width: 45%;
             background-color: var(--dark-gray); /* Dark Gray */
@@ -136,17 +148,21 @@
             box-sizing: border-box;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .review:hover {
             transform: translateY(-5px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
         .review p {
             font-size: 1rem;
             line-height: 1.5;
         }
+
         .review strong {
             color: var(--primary-color); /* Orange */
         }
+
         .distribution {
             text-align: center;
             padding: 40px;
@@ -154,6 +170,7 @@
             margin-bottom: 40px;
             border-radius: 8px;
         }
+
         footer {
             text-align: center;
             margin-top: 40px;
@@ -162,6 +179,46 @@
             color: var(--light-gray); /* Light Gray */
             font-size: 0.9rem;
             border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .about, .contact, .reviews, .distribution {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .review {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .whatsapp-link {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .whatsapp-link {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -207,7 +264,7 @@
 
     <section class="distribution">
         <h2>Looking for Distribution in Europe?</h2>
-        <p>We specialize in distributing high-quality sports products across Europe. If you're a brand looking to expand your reach or a retailer in need of innovative sports gear, Athletix is your trusted partner. Contact us to learn more about our distribution services and how we can help bring your products to new markets.</p>
+        <p>We specialize in distributing high-quality sports products across Europe. If you're a brand looking to expand your reach or a retailer in need of innovative sports gear, Athletix.is is your trusted partner. Contact us to learn more about our distribution services and how we can help bring your products to new markets.</p>
     </section>
     
     <footer>
